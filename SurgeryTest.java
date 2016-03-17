@@ -13,11 +13,21 @@ public class SurgeryTest {
 		// TODO Auto-generated method stub
 
 		
-		driver = new FirefoxDriver();
+	     driver = new FirefoxDriver();
 		 
 	     driver.manage().timeouts().implicitlyWait(300, TimeUnit.SECONDS);
 	 
 	     driver.get("https://pstakecare.com");
+	     
+	     Surgey.name(driver).sendKeys("vaibhav");
+	     
+	     Surgey.email(driver).sendKeys("vcvaibhav2@gmail.com");
+	     
+	     Surgey.mobile(driver).sendKeys("8983319162");
+	     
+	     Surgey.Surgery(driver).sendKeys("plastic surgery");
+	     
+	     Surgey.submitt(driver).click();
 	}
 
 }
